@@ -16,8 +16,8 @@ public class LifeCycle : MonoBehaviour
         //프레임이 다른 두 유저간의 형평성을 맞출 수 있다
         Vector3 vec = new Vector3(
             Input.GetAxis("Horizontal") * Time.deltaTime, 
-            Input.GetAxis("Vertical") * Time.deltaTime, 
-            0);
+            0,
+            Input.GetAxis("Vertical") * Time.deltaTime);
         transform.Translate(vec);
     }
 }
